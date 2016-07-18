@@ -6,6 +6,7 @@
 //  Copyright © 2016 seriousaboutrunning. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import Darwin
 
@@ -34,6 +35,14 @@ class ViewController: UIViewController {
         view.endEditing(true)
         super.touchesBegan(touches, withEvent: event)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        
+        let resultViewController : secondViewController = segue.destinationViewController as! secondViewController
+        
+        resultViewController.resultText = resultLabel.text!
+        }
+        
     
     @IBAction func addButton(sender: AnyObject) {
         
