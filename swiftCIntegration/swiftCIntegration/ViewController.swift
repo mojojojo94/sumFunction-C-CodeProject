@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Darwin
 
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var sumOfTwoIntsLabel: UILabel!
@@ -52,10 +53,10 @@ class ViewController: UIViewController {
         //var firstNumberString = firstNum
         //var secondNumberString = secondNum
         
-        let firstInt = Int(firstNum!)
-        let secondInt = Int(secondNum!)
+        let a = Int32(firstNum!)
+        let b = Int32(secondNum!)
         
-        let result = firstInt! + secondInt!
+        let result = function_test(a!, b!)
         
         resultLabel.text = String(result)
         

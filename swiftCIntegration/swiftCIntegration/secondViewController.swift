@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Darwin
+import Foundation
 
 class secondViewController: UIViewController {
 
